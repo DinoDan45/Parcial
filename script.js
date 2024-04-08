@@ -13,14 +13,14 @@ console.log(date.getTime());
 
 const [timestamp, apiKey, hashValue] = [ts, publicKey, hashVal];
 
-function displayWords(value) {
+const displayWords = (value) => {
     input.value = value;
     removeElements();
-}
+    };
 
-function removeElements() {
+const removeElements = () => {
     listContainer.innerHTML = "";
-}
+    };
 
 input.addEventListener("keyup", async () => {
     removeElements();
